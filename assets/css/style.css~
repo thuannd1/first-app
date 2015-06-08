@@ -5,7 +5,7 @@ h1 {
 header h1 {
     font-size: 40px;
     line-height: 80px;
-    background: transparent url(images/logo.png) 0 0 no-repeat;
+    background: transparent url(../images/logo.png) 0 0 no-repeat;
     padding-left: 84px;
 }
 p {
@@ -38,4 +38,18 @@ nav {
 }
 p {
     font: 13px/1.4 Helvetica, Arial, sans-serif;
+}
+label { display: block; }
+nav a.current {
+  background: darkgrey;
+}
+
+.flash {
+  width: 100%;
+  padding: 5px;
+  font-weight: bold;
+  margin: 20px;
+  background: #33aa11;
+  color: #115500;
+  border: 1px solid #115500;
 }

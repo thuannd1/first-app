@@ -1,12 +1,13 @@
 doctype html
 html lang="en"
   head
-    title== @title || "Songs By Sinatra"
+    title== @title
     meta charset="utf-8"
-    link href="css/style.css" rel="stylesheet" type="text/css"
+    == css :style
   body
     header
       h1 Songs By Sinatra
       == slim :nav
     section
+      == styled_flash
       == yield
