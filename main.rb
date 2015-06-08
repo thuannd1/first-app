@@ -5,6 +5,14 @@ require './song'
 
 set :public_folder, 'assets'
 
+configure :development do
+  DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/development.db")
+end
+
+configure :production do
+  DataMapper.setup(:default, ENV['DATABASE_URL'])
+end
+
 configure do
   enable :sessions
   set :username, 'thuan.nd'

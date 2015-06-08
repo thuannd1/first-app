@@ -1,9 +1,6 @@
 # Connect database
 require 'dm-core'
 require 'dm-migrations'
-configure :development do
-  DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/development.db")
-end
 
 # Create table
 class Song
