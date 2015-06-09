@@ -2,12 +2,19 @@ require 'sinatra'
 require 'sinatra/reloader' #if development?
 require 'sinatra/flash'
 require 'slim'
+require 'sass'
+require 'v8'
+require 'coffee-script'
 require './song'
 require './sinatra/auth'
 
 
 #config
 set :public_folder, 'assets'
+
+get('/css/style.css'){ scss :styles }
+get('/javascripts/application.js'){ coffee :application }
+
 
 configure :development do
   DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/development.db")

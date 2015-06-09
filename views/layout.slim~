@@ -4,6 +4,7 @@ html lang="en"
     title== @title
     meta charset="utf-8"
     == css :style
+    script src="/javascripts/application.js"
   body
     header
       h1 Songs By Sinatra
@@ -14,5 +15,3 @@ html lang="en"
   footer
     - if authorized?
       a href="/logout" log out
-    - else
-      a href="/login" log in
