@@ -61,7 +61,6 @@ post '/songs' do
 end
 
 put "/songs/:id" do
-  protected!
   song = find_song
   if song.update(params[:song])
     flash[:notice] = "Song successfully updated"

@@ -11,3 +11,6 @@ html lang="en"
     section
       == styled_flash
       == yield
+  footer
+    - if authorized?
+      a href="/logout" log out

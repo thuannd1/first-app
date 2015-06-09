@@ -3,6 +3,7 @@ require 'sinatra/reloader' #if development?
 require 'sinatra/flash'
 require 'slim'
 require './song'
+require './sinatra/auth'
 
 
 #config
@@ -14,12 +15,6 @@ end
 
 configure :production do
   DataMapper.setup(:default, ENV['DATABASE_URL'])
-end
-
-configure do
-  enable :sessions
-  set :username, 'thuan.nd'
-  set :password, '1234'
 end
 
 #helper
