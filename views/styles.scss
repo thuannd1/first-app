@@ -66,3 +66,18 @@ p {
   color: $red;
   border: 1px solid $red;
 }
+
+#like {
+  p {
+    font-weight: bold;
+    color: $red;
+  }
+  input {
+    background: $red url(/images/like.png) center center no-repeat;
+    background-size: 50px;    
+    border: darken($red, 10%) 1px solid;
+    width: 50px;
+    padding-left: 24px;
+    text-indent: -9999px;
+  }
+}

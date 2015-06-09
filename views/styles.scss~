@@ -47,6 +47,12 @@ nav {
   font-weight: bold;
 }
 
+nav a.current {
+  background: lighten($black, 5%);
+}
+
+label { display: block; }
+
 p {
   font: 13px/1.4 $main-font;
 }
@@ -59,4 +65,19 @@ p {
   background: lighten($red, 60%);
   color: $red;
   border: 1px solid $red;
+}
+
+#like {
+  p {
+    font-weight: bold;
+    color: $red;
+  }
+  input {
+    background: $red url(/images/like.png) center center no-repeat;
+    background-size: 50px;    
+    border: darken($red, 10%) 1px solid;
+    width: 50px;
+    padding-left: 24px;
+    text-indent: -9999px;
+  }
 }
