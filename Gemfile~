@@ -1,5 +1,6 @@
 source :rubygems
 gem "sinatra"
+gem "sinatra-contrib"
 gem "slim"
 gem "sass"
 gem "dm-core"
@@ -8,8 +9,7 @@ gem "thin"
 gem "pg", :group => :production
 gem "dm-postgres-adapter", :group => :production
 gem "dm-sqlite-adapter", :group => :development
-
-
+gem "sinatra-flash"
 
 
 
